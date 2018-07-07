@@ -1,12 +1,11 @@
 package cn.heyanle.littleball.plugin;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 import cn.heyanle.littleball.plugin.listener.AccessibilityListener;
 import cn.heyanle.littleball.plugin.listener.NotificationListener;
 
-public class LittleBallPlugin extends Activity {
+public class LittleBallPlugin{
 
 
 
@@ -46,23 +45,18 @@ public class LittleBallPlugin extends Activity {
     //插件生命周期
 
     /**
-     * 在Service OnCreate时候调用
-     * @param intLittleBall 主apk接口
-     */
-    public void onPluginCreate(IntLittleBall intLittleBall){
-        context = intLittleBall.getContext();
-        this.intLittleBall = intLittleBall;
-    }
-
-    /**
      * 在Service OnDestroy时候调用
      */
-    public void onPluginDestroy(){}
+    public void onPluginDestroy(){ }
 
     /**
      * 在OnCreate后加载插件时候调用（可以在这里设置WindowsView对象）
+     * @param intLittleBall 主apk接口
      */
-    public void onLoad(){}
+    public void onLoad(IntLittleBall intLittleBall){
+        context = intLittleBall.getContext();
+        this.intLittleBall = intLittleBall;
+    }
 
     /**
      * 当窗口关闭时候调用
