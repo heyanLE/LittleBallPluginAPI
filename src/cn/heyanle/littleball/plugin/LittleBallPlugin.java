@@ -13,6 +13,7 @@ public class LittleBallPlugin{
     private NotificationListener notificationListener; //通知监听器
     private AccessibilityListener accessibilityListener;//辅助功能监听器
     private IntLittleBall intLittleBall; //主app接口
+    private PluginInfo pluginInfo;
 
 
     //各种set get
@@ -41,6 +42,13 @@ public class LittleBallPlugin{
         return intLittleBall;
     }
 
+    public void setPluginInfo(PluginInfo pluginInfo) {
+        this.pluginInfo = pluginInfo;
+    }
+
+    public PluginInfo getPluginInfo() {
+        return pluginInfo;
+    }
 
     //插件生命周期
 
