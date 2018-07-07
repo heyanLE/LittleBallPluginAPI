@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LittleBallPluginApi">
+    <output-path>$PROJECT_DIR$/../../java project/LittleBallPluginAPI/out</output-path>
+    <root id="archive" name="LittleBallPluginApi.jar">
+      <element id="module-output" name="LittleBallPluginAPI" />
+    </root>
+  </artifact>
+</component>
